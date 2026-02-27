@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Meghana Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghana Kunder | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
-    <h1>Hi, I am Meghana</h1>
-    <p>Welcome to my portfolio!</p>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Meghana</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Meghana</span></h1>
+            <p>A passionate software engineer skilled in Python, Flask, CI/CD, Docker, and Cloud.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+        <div class="hero-img">
+            <img src="{{ url_for('static', filename='images/'c:\Users\Meghana.p\Downloads\meghana.jpg') }}" alt="Profile Photo">
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-cards">
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Strong experience building applications using Flask, APIs, and automation scripts.</p>
+            </div>
+
+            <div class="card">
+                <h3>CI/CD</h3>
+                <p>Hands-on with GitHub Actions, automation, testing, and deployment workflows.</p>
+            </div>
+
+            <div class="card">
+                <h3>Docker</h3>
+                <p>Containerizing applications, writing Dockerfiles, and cloud deployments.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud & Deployments</h3>
+                <p>Deploying apps on cloud platforms using containers and pipelines.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-box">
+            <h3>CI/CD Pipeline with Docker & GitHub Actions</h3>
+            <p>Designed a complete CI workflow including testing, Docker builds, and automated deployment.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Flask Portfolio Website</h3>
+            <p>A personal portfolio website built using Flask, Docker, and Railway deployment.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <strong>your-email@example.com</strong></p>
+        <p>LinkedIn: <strong>your-linkedin</strong></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Meghana Kunder. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
